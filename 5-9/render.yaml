@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: api-noticias-express
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_HOST
+        fromSecret: db_host
+      - key: DB_USER
+        fromSecret: db_user
+      - key: DB_PASSWORD
+        fromSecret: db_password
+      - key: DB_NAME
+        fromSecret: db_name
+      - key: JWT_SECRET
+        fromSecret: jwt_secret
+      - key: CORS_ORIGIN
+        fromSecret: cors_origin
