@@ -2,6 +2,7 @@ services:
   - type: web
     name: api-noticias-express
     runtime: node
+    rootDir: .
     buildCommand: npm install
     startCommand: npm start
     envVars:
