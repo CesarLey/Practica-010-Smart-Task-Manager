@@ -42,7 +42,7 @@ class TaskDetailsPage extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(12),
                 child: Image.asset(
-                  'assets/images/tarea.png',
+                  'assets/images/mi_logo.png',
                   fit: BoxFit.cover,
                   width: double.infinity,
                   height: 200,
